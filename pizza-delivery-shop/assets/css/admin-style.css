@@ -1,0 +1,477 @@
+/* Pizza Delivery Shop - Admin Styles */
+
+/* Dashboard Stats */
+.pds-dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.pds-stat-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    border-left: 4px solid #0073aa;
+}
+
+.pds-stat-box.pending {
+    border-left-color: #d63638;
+}
+
+.pds-stat-box h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.pds-stat-number {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #0073aa;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.pds-stat-box.pending .pds-stat-number {
+    color: #d63638;
+}
+
+/* Dashboard Content */
+.pds-dashboard-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.pds-dashboard-section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.pds-dashboard-section h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 2px solid #0073aa;
+    padding-bottom: 10px;
+}
+
+.pds-quick-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.pds-instructions ol {
+    padding-left: 20px;
+}
+
+.pds-instructions li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.pds-instructions code {
+    background: #f1f1f1;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: monospace;
+}
+
+/* Order Status Styles */
+.pds-status-pending {
+    background: #fff3cd;
+    color: #856404;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.pds-status-confirmed {
+    background: #cce5ff;
+    color: #004085;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.pds-status-preparing {
+    background: #fff3cd;
+    color: #856404;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.pds-status-ready {
+    background: #d1ecf1;
+    color: #0c5460;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.pds-status-delivered {
+    background: #d4edda;
+    color: #155724;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.pds-status-cancelled {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.pds-status-active {
+    background: #d4edda;
+    color: #155724;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.pds-status-inactive {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Product Management */
+.pds-product-pricing {
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.pds-pricing-row {
+    margin-bottom: 5px;
+}
+
+/* Help Sections */
+.pds-help-section {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    border-left: 4px solid #0073aa;
+}
+
+.pds-help-section h3 {
+    margin-top: 0;
+    color: #0073aa;
+}
+
+.pds-help-section ul {
+    margin-bottom: 0;
+}
+
+.pds-help-section li {
+    margin-bottom: 8px;
+}
+
+/* Form Enhancements */
+.form-table th {
+    width: 200px;
+    padding: 15px 10px 15px 0;
+}
+
+.form-table td {
+    padding: 15px 10px;
+}
+
+.form-table .description {
+    font-style: italic;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Pricing Table in Product Form */
+.pds-pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.pds-pricing-table th,
+.pds-pricing-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.pds-pricing-table th {
+    background: #f8f9fa;
+    font-weight: 600;
+}
+
+.pds-pricing-table input[type="number"] {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+/* Orders Table Enhancements */
+.wp-list-table .column-customer_info {
+    width: 200px;
+}
+
+.wp-list-table .column-items {
+    width: 250px;
+}
+
+.wp-list-table .column-total {
+    width: 120px;
+}
+
+.wp-list-table .column-status {
+    width: 100px;
+}
+
+.wp-list-table .column-actions {
+    width: 150px;
+}
+
+/* Order Status Dropdown */
+.pds-status-dropdown {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background: white;
+}
+
+/* Export Button */
+.pds-export-button {
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+/* Category Display Order */
+.pds-display-order {
+    width: 60px;
+    text-align: center;
+}
+
+/* Delivery Area Pricing */
+.pds-area-pricing {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.pds-area-pricing label {
+    margin-right: 5px;
+    font-weight: 500;
+}
+
+.pds-area-pricing input {
+    width: 100px;
+}
+
+/* Admin Bar Enhancements */
+#wp-admin-bar-pds-admin-bar .awaiting-mod {
+    background: #d63638;
+    color: white;
+    border-radius: 10px;
+    padding: 2px 6px;
+    font-size: 11px;
+    margin-left: 5px;
+}
+
+/* Plugin Settings */
+.pds-settings-section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.pds-settings-section h2 {
+    margin-top: 0;
+    color: #333;
+    border-bottom: 2px solid #0073aa;
+    padding-bottom: 10px;
+}
+
+/* Shortcode Display */
+.pds-shortcode-display {
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 14px;
+    border-left: 4px solid #0073aa;
+    margin: 15px 0;
+}
+
+/* Responsive Admin */
+@media (max-width: 1200px) {
+    .pds-dashboard-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .pds-dashboard-stats {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .pds-dashboard-stats {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .pds-stat-box {
+        padding: 15px;
+    }
+    
+    .pds-stat-number {
+        font-size: 2em;
+    }
+    
+    .pds-quick-actions {
+        flex-direction: column;
+    }
+    
+    .pds-area-pricing {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pds-dashboard-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-table th,
+    .form-table td {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+    .form-table th {
+        border-bottom: none;
+        padding-bottom: 5px;
+    }
+    
+    .form-table td {
+        border-top: none;
+        padding-top: 0;
+        padding-bottom: 15px;
+    }
+}
+
+/* Print Styles for Admin */
+@media print {
+    .page-title-action,
+    .button,
+    .pds-quick-actions,
+    .column-actions {
+        display: none !important;
+    }
+    
+    .wp-list-table {
+        border-collapse: collapse;
+    }
+    
+    .wp-list-table th,
+    .wp-list-table td {
+        border: 1px solid #000;
+        padding: 8px;
+    }
+}
+
+/* Custom Admin Notices */
+.notice.pds-notice {
+    border-left-color: #0073aa;
+}
+
+.notice.pds-notice .notice-title {
+    font-weight: 600;
+    color: #0073aa;
+}
+
+/* Loading States in Admin */
+.pds-admin-loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.pds-admin-spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #0073aa;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-left: 10px;
+}
+
+/* Success/Error Messages */
+.pds-admin-message {
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+.pds-admin-message.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.pds-admin-message.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Plugin Info Box */
+.pds-plugin-info {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.pds-plugin-info h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.pds-plugin-info p {
+    margin-bottom: 10px;
+}
+
+.pds-plugin-info code {
+    background: #f1f1f1;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: monospace;
+}
